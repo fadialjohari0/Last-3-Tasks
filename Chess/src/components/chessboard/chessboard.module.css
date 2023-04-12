@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(50, 50, 60);
+}
+
+.chessboardMain {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.chessboardGame {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.playerOne,
+.playerTwo {
+  font-size: 3.2rem;
+}
+
+.playerOne {
+  color: rgb(18, 224, 18, 35%);
+}
+.playerTwo {
+  color: rgb(255, 0, 0, 35%);
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  border: 3px solid rgb(126, 126, 153);
+  box-shadow: 5px 5px 15px rgb(39, 39, 43);
+  border-radius: 5px;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.white {
+  background-color: rgb(164, 170, 177);
+}
+
+.black {
+  background-color: rgb(105, 108, 112);
+}
+
+.whitePiece {
+  color: #fff;
+}
+
+.blackPiece {
+  color: #000;
+}
+
+.test {
+  background: radial-gradient(circle at 50% 50%, #00ff00 5px, transparent 5px);
+  box-shadow: 1px 1px 10px #000000;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+}
